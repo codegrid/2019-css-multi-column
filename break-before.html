@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!--幅が決まっていない場合-->
+<meta name="viewport" content="width=device-width">
+<title>demo</title>
+<style>
+section {
+  column-count: 4;
+}
+h2 {
+  column-span: all;
+}
+.before-column p {
+  break-before: column;
+}
+.after-column p {
+  break-after: column;
+}
+/* 装飾 */
+section {
+  width: 300px;
+  padding: 10px;
+  outline: 3px solid tomato;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 18px;
+  background-color: tomato;
+  margin-top: 0;
+}
+p {
+  outline: 2px dashed #ccc;
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<section>
+  <h2>指定なし</h2>
+  <p>段落1: The.</p>
+  <p>段落2: The quick brown fox jumps over the lazy dog.</p>
+  <p>段落3: The quick brown fox jumps.</p>
+</section>
+
+<section class="before-column">
+  <h2>break-before: column;を指定</h2>
+  <p>段落1: The.</p>
+  <p>段落2: The quick brown fox jumps over the lazy dog.</p>
+  <p>段落3: The quick brown fox jumps.</p>
+</section>
+
+<section class="after-column">
+  <h2>break-after: column;を指定</h2>
+  <p>段落1: The.</p>
+  <p>段落2: The quick brown fox jumps over the lazy dog.</p>
+  <p>段落3: The quick brown fox jumps.</p>
+</section>
+
+</body>
+</html>

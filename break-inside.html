@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!--幅が決まっていない場合-->
+<meta name="viewport" content="width=device-width">
+<title>demo</title>
+<style>
+section {
+  column-count: 3;
+}
+h2 {
+  column-span: all;
+}
+.inside-avoid-column p {
+  break-inside: avoid-column;
+}
+/* 装飾 */
+section {
+  width: 300px;
+  padding: 10px;
+  outline: 3px solid tomato;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 18px;
+  background-color: tomato;
+  margin-top: 0;
+}
+p {
+  outline: 2px dashed #ccc;
+}
+</style>
+</head>
+<body>
+
+<section>
+  <h2>指定なし</h2>
+  <p>段落1: The quick.</p>
+  <p>段落2: The quick brown fox jumps over the lazy dog.</p>
+  <p>段落3: The quick brown.</p>
+</section>
+
+<section class="inside-avoid-column">
+  <h2>break-inside: avoid-column;を指定</h2>
+  <p>段落1: The quick.</p>
+  <p>段落2: The quick brown fox jumps over the lazy dog.</p>
+  <p>段落3: The quick brown.</p>
+</section>
+
+</body>
+</html>

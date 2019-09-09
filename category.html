@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!--幅が決まっていない場合-->
+<meta name="viewport" content="width=device-width">
+<title>demo</title>
+<style>
+.Category {
+  width: 100%;
+  column-count: 4;
+  column-width: 100px;
+}
+.Category_List {
+  break-inside: avoid-column;
+}
+/* 装飾 */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.Category {
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+.Category > li {
+  margin-bottom: 10px;
+}
+.Category > li > a {
+  font-weight: bold;
+}
+.Category > li > ul {
+  padding-left: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2>いい感じに収まる場合</h2>
+
+<ul class="Category">
+  <li class="Category_List">
+    <a href="#">大カテゴリ1</a>
+    <ul>
+      <li><a href="#">小カテゴリ</a></li>
+    </ul>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ2</a>
+    <ul>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+    </ul>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ3</a>
+    <ul>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+    </ul>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ3</a>
+    <ul>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+    </ul>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ4</a>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ5</a>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ6</a>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ7</a>
+  </li>
+</ul>
+
+<h2>いい感じに収まらない場合</h2>
+
+<ul class="Category">
+  <li class="Category_List">
+    <a href="#">大カテゴリ1</a>
+    <ul>
+      <li><a href="#">小カテゴリ</a></li>
+    </ul>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ2</a>
+    <ul>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+    </ul>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ3</a>
+    <ul>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+    </ul>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ3</a>
+    <ul>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+    </ul>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ4</a>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ5</a>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ6</a>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ7</a>
+  </li>
+</ul>
+
+<ul class="Category">
+  <li class="Category_List">
+    <a href="#">大カテゴリ1</a>
+    <ul>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+    </ul>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ2</a>
+    <ul>
+      <li><a href="#">小カテゴリ</a></li>
+    </ul>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ3</a>
+    <ul>
+      <li><a href="#">小カテゴリ</a></li>
+    </ul>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ4</a>
+    <ul>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+      <li><a href="#">小カテゴリ</a></li>
+    </ul>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ5</a>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ6</a>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ7</a>
+  </li>
+  <li class="Category_List">
+    <a href="#">大カテゴリ8</a>
+  </li>
+</ul>
+
+</body>
+</html>
